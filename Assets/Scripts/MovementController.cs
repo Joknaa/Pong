@@ -1,16 +1,16 @@
-﻿using Unity.Mathematics;
+﻿using System;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour {
-    private Transform sliderTransform;
-    private const double Speed = 0.1;
+    private Rigidbody2D sliderRigidbody2D;
+    private const double Speed = 10;
 
     private void Start() {
-        sliderTransform = gameObject.GetComponent<Transform>();
+        sliderRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    private void Update() {
-        Vector3 Direction = new Vector2(0, 0);
+    private void FixedUpdate() {
+        var Direction = new Vector2(0, 0);
 
         if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)) Direction = new Vector3(1, 1);
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow)) Direction = new Vector3(1, -1);
@@ -22,6 +22,11 @@ public class MovementController : MonoBehaviour {
             if (Input.GetKey(KeyCode.RightArrow)) Direction = Vector2.right;
             if (Input.GetKey(KeyCode.LeftArrow)) Direction = Vector2.left;
         }
-        sliderTransform.position += (float) Speed * Direction;
+
+        sliderRigidbody2D.velocity = (float) Speed * Direction;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        Debug.Log("ts a WALL !!!!");
     }
 }
