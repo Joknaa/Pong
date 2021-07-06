@@ -794,6 +794,38 @@ Transform:
   m_Father: {fileID: 2072703497}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1206734788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3592362802812088376, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3592362803339018693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1206734793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206734788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.002369158, y: -0.0032160878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 1.5}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.12821458, y: 1.1408466}
+  m_EdgeRadius: 0
 --- !u!1001 &1456501379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1244,6 +1276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5657547934561499873, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
         type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -5657547934561499873, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
+        type: 3}
       propertyPath: m_UseFullKinematicContacts
       value: 0
       objectReference: {fileID: 0}
@@ -1311,6 +1348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920032366932443726, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 741d854a92b0c5c4ba5b7febcc3e272b, type: 3}

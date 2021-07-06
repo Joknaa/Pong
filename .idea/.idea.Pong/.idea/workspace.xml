@@ -20,9 +20,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TrajectoryController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
       </list>
     </option>
   </component>
