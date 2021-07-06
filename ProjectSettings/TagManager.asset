@@ -8,6 +8,8 @@ TagManager:
   - Goal
   - Slider
   - Ball
+  - GameMaster
+  - EnemyAI
   layers:
   - Default
   - TransparentFX

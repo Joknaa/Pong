@@ -1,18 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class BallController : MonoBehaviour {
-    public GameController GameController;
-    private Rigidbody2D ballRigidbody2D;
+    private GameObject GameMaster;
 
     private void Start() {
-        ballRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        GameMaster = GameObject.FindGameObjectWithTag("GameMaster");
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Goal")) {
-            GameController = gameObject.GetComponent<GameController>().DestroyBall(this);
+            GameMaster.GetComponent<GameController>().RestartRound();
             Debug.Log("GOAAAAAl");
         }
-        else if (other.gameObject.CompareTag("Slider")) Debug.Log("tuch !!");
     }
 }

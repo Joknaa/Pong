@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 304697854}
   m_Layer: 0
   m_Name: GameMaster
-  m_TagString: Untagged
+  m_TagString: GameMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball: {fileID: 852719026}
+  EnemySlider: {fileID: 1456501380}
 --- !u!4 &304697855
 Transform:
   m_ObjectHideFlags: 0
@@ -813,7 +814,7 @@ PrefabInstance:
     - target: {fileID: 3592362802812088376, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
         type: 3}
       propertyPath: m_TagString
-      value: Slider
+      value: EnemyAI
       objectReference: {fileID: 0}
     - target: {fileID: 3592362802812088378, guid: 741d854a92b0c5c4ba5b7febcc3e272b,
         type: 3}
