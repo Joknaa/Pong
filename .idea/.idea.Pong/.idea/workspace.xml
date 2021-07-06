@@ -8,15 +8,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD32C417-64FF-48B3-B20A-F005AD784865/43/9569dbf3/ForceMode2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD32C417-64FF-48B3-B20A-F005AD784865/9f/91050b33/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TrajectoryController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
       </list>
     </option>
   </component>
@@ -28,6 +33,7 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -56,9 +62,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup" timestamp="1625486980771">
+    <state x="443" y="-739" key="SettingsEditor" timestamp="1625563987100">
       <screen x="259" y="-768" width="1366" height="768" />
     </state>
-    <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625486980771" />
+    <state x="443" y="-739" key="SettingsEditor/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563987100" />
+    <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup" timestamp="1625563976840">
+      <screen x="259" y="-768" width="1366" height="768" />
+    </state>
+    <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563976840" />
   </component>
 </project>

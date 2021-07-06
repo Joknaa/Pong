@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovementController : MonoBehaviour {
     private Rigidbody2D sliderRigidbody2D;
@@ -10,20 +9,22 @@ public class MovementController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        var Direction = new Vector2(0, 0);
-
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)) Direction = new Vector3(1, 1);
-        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow)) Direction = new Vector3(1, -1);
-        else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow)) Direction = new Vector3(-1, -1);
-        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow)) Direction = new Vector3(-1, 1);
-        else {
-            if (Input.GetKey(KeyCode.UpArrow)) Direction = Vector2.up;
-            if (Input.GetKey(KeyCode.DownArrow)) Direction = Vector2.down;
-            if (Input.GetKey(KeyCode.RightArrow)) Direction = Vector2.right;
-            if (Input.GetKey(KeyCode.LeftArrow)) Direction = Vector2.left;
-        }
-
+        var Direction = GetPressedDirection();
         sliderRigidbody2D.velocity = (float) Speed * Direction;
+    }
+
+    private static Vector2 GetPressedDirection() {
+        if (Input.GetKey(KeyCode.UpArrow)    && Input.GetKey(KeyCode.RightArrow)) return new Vector3(1, 1);
+        if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow))  return new Vector3(1, -1);
+        if (Input.GetKey(KeyCode.DownArrow)  && Input.GetKey(KeyCode.LeftArrow))  return new Vector3(-1, -1);
+        if (Input.GetKey(KeyCode.LeftArrow)  && Input.GetKey(KeyCode.UpArrow))    return new Vector3(-1, 1); 
+        
+        if (Input.GetKey(KeyCode.UpArrow))    return Vector2.up;
+        if (Input.GetKey(KeyCode.DownArrow))  return Vector2.down;
+        if (Input.GetKey(KeyCode.RightArrow)) return Vector2.right;
+        if (Input.GetKey(KeyCode.LeftArrow)) return Vector2.left;
+        
+        return Vector2.zero;
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
