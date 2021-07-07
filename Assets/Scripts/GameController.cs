@@ -4,7 +4,6 @@ using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour {
     public GameObject Ball;
-    public GameObject EnemySlider;
     private Rigidbody2D BallRigidbody2D;
 
     private void Start() {
@@ -21,7 +20,6 @@ public class GameController : MonoBehaviour {
         var Direction_X = math.sign(Random.value - 0.5f);
         var Direction_Y = math.sign(Random.value - 0.5f);
         BallRigidbody2D.velocity = Vector2.zero;
-        //BallRigidbody2D.AddForce(new Vector2(200 * Direction_X, 200 * Direction_Y));
         BallRigidbody2D.AddForce(new Vector2(200 * Direction_X, 200 * Direction_Y));
     }
 }

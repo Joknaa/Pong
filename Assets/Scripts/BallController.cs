@@ -5,15 +5,16 @@ public class BallController : MonoBehaviour {
     private GameObject GameMaster;
     private Rigidbody2D BallRigidBody2D;
     private Rigidbody2D SliderRigidBody2D;
-    private Vector2 BallVelocity;
-    private Vector2 SliderVelocity;
 
     private void Start() {
         GameMaster = GameObject.FindGameObjectWithTag("GameMaster");
         BallRigidBody2D = gameObject.GetComponent<Rigidbody2D>();
-        BallVelocity = gameObject.GetComponent<Rigidbody2D>().velocity;
         SliderRigidBody2D = GameObject.FindGameObjectWithTag("Slider").GetComponent<Rigidbody2D>();
-        SliderVelocity = GameObject.FindGameObjectWithTag("Slider").GetComponent<Rigidbody2D>().velocity;
+        
+        GameObject[] SliderLimiters = GameObject.FindGameObjectsWithTag("SliderLimiter");
+        foreach (var Ignored in SliderLimiters) {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), Ignored.GetComponent<Collider2D>());
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
