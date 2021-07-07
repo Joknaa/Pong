@@ -5,12 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Walls
-  - Goal
   - Slider
   - Ball
   - GameMaster
   - EnemyAI
   - SliderLimiter
+  - PlayerGoal
+  - EnemyGoal
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - SlidersLimite
+  - Slider
   - 
   - 
   - 
