@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0603192e29702c745bbe5387311ef742
+guid: e097727706bbb0247abff99ade7175c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9169877530624898698
-    second: Slider_0
+      213: 7561709280961565165
+    second: 20cm-orange-opal-precut-glass-circle-01251590_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 17, y: 16, z: 17, w: 16}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,22 +126,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slider_0
+      name: 20cm-orange-opal-precut-glass-circle-01251590_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 250
+        x: 52
+        y: 51
+        width: 696
+        height: 698
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a86bbbea703f14f70800000000000000
-      internalID: 9169877530624898698
+      spriteID: de11d72078690f860800000000000000
+      internalID: 7561709280961565165
       vertices: []
       indices: 
       edges: []

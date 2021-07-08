@@ -4013,6 +4013,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2072703497}
     m_Modifications:
+    - target: {fileID: 2781309624481353552, guid: 504fff69a0dfca144b61ec8f9e939f47,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.24902767
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781309624481353552, guid: 504fff69a0dfca144b61ec8f9e939f47,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2781309624481353553, guid: 504fff69a0dfca144b61ec8f9e939f47,
         type: 3}
       propertyPath: m_RootOrder

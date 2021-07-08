@@ -8,8 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FBF41107-9F93-49AF-9D72-83CBBD3A7C7C/d8/5c85bee2/Collider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/prefabInstentiate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B6AA75C-6BB9-4D0A-9290-7BBF0928E027/5c/58ca8ec6/String.cs" root0="SKIP_HIGHLIGHTING" />
@@ -18,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/BallController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D16B2D5A-DAE3-45AA-B87E-A9BCFCB55F94/22/19eae7fd/IPointerEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/028E4D71-153D-4ED5-AC6B-EE0DFC08AA3B/be/330587f8/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/028E4D71-153D-4ED5-AC6B-EE0DFC08AA3B/2a/d91a6538/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD32C417-64FF-48B3-B20A-F005AD784865/9f/91050b33/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -40,7 +41,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ButtonsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PauseMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BallController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IGameState.cs" />
@@ -50,6 +50,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/PlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/GameStateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/PauseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/prefabInstentiate.cs" />
       </list>
     </option>
@@ -108,9 +109,10 @@
       <screen x="259" y="-768" width="1366" height="768" />
     </state>
     <state x="443" y="-739" key="SettingsEditor/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563987100" />
-    <state x="486" y="125" width="945" height="954" key="search.everywhere.popup" timestamp="1625764353525">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="-1434" y="125" width="945" height="954" key="search.everywhere.popup" timestamp="1625782454484">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1434" y="125" width="945" height="954" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1625782454484" />
     <state x="486" y="125" width="945" height="954" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1625764353525" />
     <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563976840" />
   </component>

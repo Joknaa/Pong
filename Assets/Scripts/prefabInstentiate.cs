@@ -5,42 +5,66 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class prefabInstentiate : MonoBehaviour {
-    public GameObject myPrefab;
-    public GameObject Parent;
-    public SpriteRenderer spriteRenderer;
-    private Texture2D ImageTexture;
+    public GameObject SliderPrefab;
+    public GameObject SliderParent;
+    public GameObject BallPrefab;
+    public GameObject BallParent;
 
-    private List<GameObject> InstantiatedPrefabsList = new List<GameObject>();
-    private Texture2D NewTexture;
-
-    public void LoadPrefab() {
-        Sprite[] Images = Resources.LoadAll("", typeof(Sprite)).Cast<Sprite>().ToArray();
+    private void Start() {
+        Sprite[ ] Images = Resources.LoadAll("", typeof(Sprite)).Cast<Sprite>().ToArray();
 
         foreach (Sprite Image in Images) {
-            GameObject InstantiatedPrefab = InstantiatePrefab();
+            GameObject NewSliderPrefab = InstantiatePrefab(SliderPrefab, SliderParent);
+            NewSliderPrefab.GetComponent<Image>().sprite = Sprite.Create(
+                SetupSliderTexture(Image),
+                new Rect(0, 0, 200, 40),
+                Vector2.one * 0.5f);
 
-            SetupTexture(Image);
-
-            InstantiatedPrefab.GetComponent<Image>().sprite = Sprite.Create(NewTexture, new Rect(0, 0, NewTexture.width, NewTexture.height),
+            GameObject NewBallPrefab = InstantiatePrefab(BallPrefab, BallParent);
+            NewBallPrefab.GetComponent<Image>().sprite = Sprite.Create(
+                SetupBallTexture(Image),
+                new Rect(0, 0, 40, 40),
                 Vector2.one * 0.5f);
         }
     }
 
-    private GameObject InstantiatePrefab() {
-        GameObject InstantiatedPrefab = Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        
+    private GameObject InstantiatePrefab(GameObject Prefab, GameObject Parent) {
+        GameObject InstantiatedPrefab = Instantiate(Prefab, new Vector3(0, 0, 0), Quaternion.identity);
+
         InstantiatedPrefab.transform.SetParent(Parent.transform);
         InstantiatedPrefab.GetComponent<RectTransform>().localScale = Vector3.one;
-        InstantiatedPrefabsList.Add(InstantiatedPrefab);
         return InstantiatedPrefab;
     }
 
-    private void SetupTexture(Sprite Image) {
-        ImageTexture = Image.texture;
-        NewTexture = new Texture2D(16, 118);
-        for (var i = 0; i < NewTexture.width; i++) {
-            for (var j = 0; j < NewTexture.height; j++) NewTexture.SetPixel(i, j, ImageTexture.GetPixel(i, j));
+    private Texture2D SetupSliderTexture(Sprite Image) {
+        Texture2D ImageTexture = Image.texture;
+        Texture2D PrefabTexture = new Texture2D(200, 40);
+
+        for (var i = 0; i < PrefabTexture.width; i++)
+            for (var j = 0; j < PrefabTexture.height; j++)
+                PrefabTexture.SetPixel(i, j, ImageTexture.GetPixel(i, j));
+
+        PrefabTexture.Apply();
+        return PrefabTexture;
+    }
+
+    private Texture2D SetupBallTexture(Sprite Image) {
+        Texture2D ImageTexture = Image.texture;
+        Texture2D PrefabTexture = new Texture2D(40, 40);
+        int radius = 20;
+        int rSquared = radius * radius;
+
+        for (int u = 20 - radius; u < 20 + radius + 1; u++) {
+            for (int v = 20 - radius; v < 20 + radius + 1; v++) {
+                if ((20 - u) * (20 - u) + (20 - v) * (20 - v) < rSquared)
+                    PrefabTexture.SetPixel(u, v, ImageTexture.GetPixel(u, v));
+                else
+                    PrefabTexture.SetPixel(u, v, new Color(0, 0, 0, 0));
+            }
         }
-        NewTexture.Apply();
+
+
+        PrefabTexture.Apply();
+        return PrefabTexture;
     }
 }
