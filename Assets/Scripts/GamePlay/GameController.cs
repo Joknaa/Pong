@@ -10,7 +10,6 @@ namespace GamePlay {
         private GameObject Ball;
         private Rigidbody2D BallRigidbody2D;
         private AudioSource AudioSource;
-        private GameState CurrentState = GameState.Play;
         public AudioClip MainTheme;
 
         private void Start() {
@@ -19,32 +18,7 @@ namespace GamePlay {
             GameObject.FindGameObjectWithTag("Slider").GetComponent<SpriteRenderer>().color = Global.SelectedSlider;
             GameObject.FindGameObjectWithTag("EnemyAI").GetComponent<SpriteRenderer>().color = Global.SelectedSlider;
         }
-
-        private void Update() {
-            switch (CurrentState) {
-                case GameState.Play: Play();
-                    break;
-                case GameState.Pause: Pause();
-                    break;
-                case GameState.Result : Result();
-                    break;
-            }
-        }
-
-        private void Play() {
-            throw new NotImplementedException();
-        }
-
-        private void Pause() {
-            throw new NotImplementedException();
-        }
         
-        private void Result() {
-            throw new NotImplementedException();
-        }
-
-
-
         private void SetupAudio() {
             AudioSource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
             AudioSource.clip = MainTheme;

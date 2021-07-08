@@ -38,7 +38,13 @@
             <e p="PlayerController.cs" t="Include" />
             <e p="ScoreController.cs" t="Include" />
           </e>
-          <e p="GameState.cs" t="Include" />
+          <e p="GameState" t="Include">
+            <e p="GameStateController.cs" t="Include" />
+            <e p="IGameState.cs" t="Include" />
+            <e p="PauseState.cs" t="Include" />
+            <e p="PlayState.cs" t="Include" />
+            <e p="ResultState.cs" t="Include" />
+          </e>
           <e p="Global.cs" t="Include" />
           <e p="GUI" t="Include">
             <e p="ButtonsController.cs" t="Include" />
@@ -46,6 +52,7 @@
             <e p="PauseMenuController.cs" t="Include" />
             <e p="ResultPanelController.cs" t="Include" />
           </e>
+          <e p="prefabInstentiate.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
