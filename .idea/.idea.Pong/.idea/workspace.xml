@@ -32,17 +32,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/UltimateMenus/Scripts/ButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/UIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/ScoreController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ColorChooserController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CustomisationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ButtonsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PauseMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BallController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
       </list>
     </option>
   </component>

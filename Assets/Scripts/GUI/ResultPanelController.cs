@@ -7,6 +7,7 @@ namespace GUI {
         private string PlayerName = Global.PlayerName;
         private string EnemyName = "2B";
         public GameObject ResultPanel;
+        public GameObject PauseButton;
 
         [Header("Audio: ")]
         public AudioSource MainAudioSource;
@@ -20,11 +21,13 @@ namespace GUI {
         public Text ScoreText;
         
         private void Start() {
+            PauseButton.SetActive(true);
             ResultPanel.SetActive(false);
             PlayerName = Global.PlayerName;
         }
 
         public void DisplayResult(int PlayerScore, int EnemyScore) {
+            PauseButton.SetActive(false);
             MainAudioSource.Stop();
             ResultAudioSource.clip = ResultSound;
             ResultAudioSource.Play();

@@ -6,6 +6,7 @@ namespace GamePlay {
         private Rigidbody2D sliderRigidbody2D;
         private const float Speed = 9f;
         private Vector2 Direction;
+        public Joystick joystick;
 
         private void Start() {
             sliderRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -19,8 +20,9 @@ namespace GamePlay {
             sliderRigidbody2D.velocity = Speed * Direction;
         }
 
-        private static Vector2 GetNewDirection() {
-            return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        private Vector2 GetNewDirection() {
+            //return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+            return new Vector2(joystick.Horizontal, joystick.Vertical).normalized;
         }
 
         private static Vector2 GetPressedDirection() {

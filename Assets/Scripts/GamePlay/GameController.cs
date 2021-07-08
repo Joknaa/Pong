@@ -1,6 +1,6 @@
-﻿using Unity.Mathematics;
+﻿using System;
+using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace GamePlay {
@@ -9,8 +9,9 @@ namespace GamePlay {
         private Color BallColor;
         private GameObject Ball;
         private Rigidbody2D BallRigidbody2D;
-        public AudioClip MainTheme;
         private AudioSource AudioSource;
+        private GameState CurrentState = GameState.Play;
+        public AudioClip MainTheme;
 
         private void Start() {
             SetupAudio();
@@ -19,12 +20,36 @@ namespace GamePlay {
             GameObject.FindGameObjectWithTag("EnemyAI").GetComponent<SpriteRenderer>().color = Global.SelectedSlider;
         }
 
+        private void Update() {
+            switch (CurrentState) {
+                case GameState.Play: Play();
+                    break;
+                case GameState.Pause: Pause();
+                    break;
+                case GameState.Result : Result();
+                    break;
+            }
+        }
+
+        private void Play() {
+            throw new NotImplementedException();
+        }
+
+        private void Pause() {
+            throw new NotImplementedException();
+        }
+        
+        private void Result() {
+            throw new NotImplementedException();
+        }
+
+
+
         private void SetupAudio() {
             AudioSource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
             AudioSource.clip = MainTheme;
             AudioSource.Play();
         }
-        
         private void SetupBall() {
             Ball = GameObject.FindGameObjectWithTag("Ball");
             Ball.GetComponent<SpriteRenderer>().color = Global.SelectedBall;
