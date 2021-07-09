@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace GUI {
     public class ResultPanelController : MonoBehaviour {
-        private string PlayerName = Global.PlayerName;
+        private string PlayerName = CrossScenes.PlayerName;
         private string EnemyName = "2B";
         public GameObject ResultPanel;
         public GameObject PauseButton;
@@ -23,7 +23,7 @@ namespace GUI {
         private void Start() {
             PauseButton.SetActive(true);
             ResultPanel.SetActive(false);
-            PlayerName = Global.PlayerName;
+            //PlayerName = Global.PlayerName;
         }
 
         public void DisplayResult(int PlayerScore, int EnemyScore) {

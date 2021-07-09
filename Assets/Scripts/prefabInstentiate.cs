@@ -4,35 +4,43 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class prefabInstentiate : MonoBehaviour {
+public class PrefabInstentiate : MonoBehaviour {
     public GameObject SliderPrefab;
     public GameObject SliderParent;
     public GameObject BallPrefab;
     public GameObject BallParent;
 
-    private void Start() {
+    private static Dictionary<int, Sprite> SliderImages = new Dictionary<int, Sprite>();
+    private static Dictionary<int, Sprite> BallImages = new Dictionary<int, Sprite>();
+
+    public void InstantiatePrefabs() {
         Sprite[ ] Images = Resources.LoadAll("", typeof(Sprite)).Cast<Sprite>().ToArray();
 
-        foreach (Sprite Image in Images) {
+        for (int i = 0; i < Images.Length; i++) {
             GameObject NewSliderPrefab = InstantiatePrefab(SliderPrefab, SliderParent);
+            GameObject NewBallPrefab = InstantiatePrefab(BallPrefab, BallParent);
+
             NewSliderPrefab.GetComponent<Image>().sprite = Sprite.Create(
-                SetupSliderTexture(Image),
+                SetupSliderTexture(Images[i]),
                 new Rect(0, 0, 200, 40),
                 Vector2.one * 0.5f);
-
-            GameObject NewBallPrefab = InstantiatePrefab(BallPrefab, BallParent);
             NewBallPrefab.GetComponent<Image>().sprite = Sprite.Create(
-                SetupBallTexture(Image),
+                SetupBallTexture(Images[i]),
                 new Rect(0, 0, 40, 40),
                 Vector2.one * 0.5f);
+
+
+            SliderImages.Add(NewSliderPrefab.GetInstanceID(), Images[i]);
+            BallImages.Add(NewBallPrefab.GetInstanceID(), Images[i]);
         }
+
     }
 
     private GameObject InstantiatePrefab(GameObject Prefab, GameObject Parent) {
         GameObject InstantiatedPrefab = Instantiate(Prefab, new Vector3(0, 0, 0), Quaternion.identity);
-
         InstantiatedPrefab.transform.SetParent(Parent.transform);
         InstantiatedPrefab.GetComponent<RectTransform>().localScale = Vector3.one;
+
         return InstantiatedPrefab;
     }
 
@@ -47,7 +55,6 @@ public class prefabInstentiate : MonoBehaviour {
         PrefabTexture.Apply();
         return PrefabTexture;
     }
-
     private Texture2D SetupBallTexture(Sprite Image) {
         Texture2D ImageTexture = Image.texture;
         Texture2D PrefabTexture = new Texture2D(40, 40);
@@ -63,8 +70,16 @@ public class prefabInstentiate : MonoBehaviour {
             }
         }
 
-
         PrefabTexture.Apply();
         return PrefabTexture;
+    }
+
+    public static Sprite GetTextureFromSliderPrefab(int sliderID) {
+        Debug.Log(SliderImages.Values.Count);
+        return SliderImages[sliderID];
+    }
+
+    public static Sprite GetTextureFromBallPrefab(int ballID) {
+        return BallImages[ballID];
     }
 }

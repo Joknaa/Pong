@@ -19,10 +19,16 @@ namespace GamePlay {
         private void FixedUpdate() {
             sliderRigidbody2D.velocity = Speed * Direction;
         }
-
+        
+        //todo: rewrite the mobile controllers (touch cound stuff)
         private Vector2 GetNewDirection() {
-            //return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-            return new Vector2(joystick.Horizontal, joystick.Vertical).normalized;
+            Vector2 movement;
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+            movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+#elif UNITY_IOS || UNITY_ANDROID
+            movement = new Vector2(joystick.Horizontal, joystick.Vertical).normalized;
+#endif
+            return movement;
         }
 
         private static Vector2 GetPressedDirection() {

@@ -31,6 +31,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CrossScenes.cs" t="Include" />
+          <e p="CustomisationController.cs" t="Include" />
           <e p="GamePlay" t="Include">
             <e p="AIController.cs" t="Include" />
             <e p="BallController.cs" t="Include" />
@@ -45,10 +47,9 @@
             <e p="PlayState.cs" t="Include" />
             <e p="ResultState.cs" t="Include" />
           </e>
-          <e p="Global.cs" t="Include" />
           <e p="GUI" t="Include">
             <e p="ButtonsController.cs" t="Include" />
-            <e p="CustomisationController.cs" t="Include" />
+            <e p="MainMenuController.cs" t="Include" />
             <e p="PauseMenuController.cs" t="Include" />
             <e p="ResultPanelController.cs" t="Include" />
           </e>

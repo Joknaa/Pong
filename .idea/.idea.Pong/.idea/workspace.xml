@@ -9,9 +9,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FBF41107-9F93-49AF-9D72-83CBBD3A7C7C/d8/5c85bee2/Collider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CF2EEE1F-04F2-4122-84EA-132765256A1E/80/4915c6a8/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/prefabInstentiate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CrossScenes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabInstentiate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B6AA75C-6BB9-4D0A-9290-7BBF0928E027/5c/58ca8ec6/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD32C417-64FF-48B3-B20A-F005AD784865/43/9569dbf3/ForceMode2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/ScoreController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,22 +37,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/ScoreController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ColorChooserController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Global.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CustomisationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ButtonsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PauseMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BallController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IGameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/IGameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/ResultState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/PlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/GameStateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/PauseState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CustomisationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CrossScenes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/prefabInstentiate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabInstentiate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomisationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -64,7 +69,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
@@ -105,15 +110,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1625745050134" />
-    <state x="443" y="-739" key="SettingsEditor" timestamp="1625563987100">
-      <screen x="259" y="-768" width="1366" height="768" />
+    <state x="259" y="41" key="SettingsEditor" timestamp="1625833955887">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="443" y="-739" key="SettingsEditor/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563987100" />
-    <state x="-1434" y="125" width="945" height="954" key="search.everywhere.popup" timestamp="1625782454484">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="259" y="41" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1625833955887" />
+    <state x="486" y="125" width="945" height="954" key="search.everywhere.popup" timestamp="1625833939063">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1434" y="125" width="945" height="954" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1625782454484" />
     <state x="486" y="125" width="945" height="954" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1625764353525" />
     <state x="605" y="-679" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/259.-768.1366.768@259.-768.1366.768" timestamp="1625563976840" />
+    <state x="486" y="125" width="945" height="954" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1625833939063" />
   </component>
 </project>
