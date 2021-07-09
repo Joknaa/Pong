@@ -3245,7 +3245,7 @@ GameObject:
   - component: {fileID: 1317987875}
   - component: {fileID: 1317987877}
   - component: {fileID: 1317987876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3471,13 +3471,13 @@ GameObject:
   - component: {fileID: 1808080381}
   - component: {fileID: 1808080383}
   - component: {fileID: 1808080382}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Joystick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1808080381
 RectTransform:
   m_ObjectHideFlags: 0
