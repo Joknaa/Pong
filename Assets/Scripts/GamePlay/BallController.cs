@@ -19,8 +19,7 @@ namespace GamePlay {
                 GameMaster.GetComponent<GameController>().RestartRound();
             }
             else if (other.gameObject.CompareTag("Slider")) {
-                var direction = SliderRigidBody2D.position - BallRigidBody2D.position;
-                BallRigidBody2D.velocity += direction;
+                BallRigidBody2D.velocity -= other.GetComponent<Rigidbody2D>().velocity;
             }
         }
     }

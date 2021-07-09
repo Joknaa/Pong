@@ -34,5 +34,8 @@ namespace GUI {
         public void SetGameOver(bool Status) {
             this.GameOver = Status;
         }
+
+        public bool GetIsPaused() { return IsPaused; }
+        public bool GetIsGameOver() { return GameOver; }
     }
 }

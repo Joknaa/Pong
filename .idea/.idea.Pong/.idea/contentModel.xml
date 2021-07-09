@@ -37,7 +37,7 @@
             <e p="AIController.cs" t="Include" />
             <e p="BallController.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerJoystickController.cs" t="Include" />
             <e p="ScoreController.cs" t="Include" />
           </e>
           <e p="GameState" t="Include">

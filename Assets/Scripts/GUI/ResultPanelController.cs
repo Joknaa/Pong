@@ -23,7 +23,7 @@ namespace GUI {
         private void Start() {
             PauseButton.SetActive(true);
             ResultPanel.SetActive(false);
-            //PlayerName = Global.PlayerName;
+            PlayerName = CrossScenes.PlayerName;
         }
 
         public void DisplayResult(int PlayerScore, int EnemyScore) {
