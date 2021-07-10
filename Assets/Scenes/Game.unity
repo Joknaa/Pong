@@ -596,7 +596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280208238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.61, y: 0, z: 0}
+  m_LocalPosition: {x: 6.99, y: 0, z: 0}
   m_LocalScale: {x: 0.63289124, y: 9.166153, z: 1}
   m_Children: []
   m_Father: {fileID: 568431923}
@@ -1952,7 +1952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820997855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.59, y: 0, z: 0}
+  m_LocalPosition: {x: -6.97, y: 0, z: 0}
   m_LocalScale: {x: 0.63289124, y: 9.166153, z: 1}
   m_Children: []
   m_Father: {fileID: 568431923}
@@ -3542,6 +3542,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2072703497}
     m_Modifications:
+    - target: {fileID: 2757729081609690021, guid: d555151d2cdf32045816fb912637566b,
+        type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6041788135078242769, guid: d555151d2cdf32045816fb912637566b,
         type: 3}
       propertyPath: m_RootOrder
@@ -4007,20 +4012,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2072703497}
     m_Modifications:
-    - target: {fileID: 2781309624481353552, guid: 504fff69a0dfca144b61ec8f9e939f47,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.24902767
-      objectReference: {fileID: 0}
-    - target: {fileID: 2781309624481353552, guid: 504fff69a0dfca144b61ec8f9e939f47,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2781309624481353553, guid: 504fff69a0dfca144b61ec8f9e939f47,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781309624481353553, guid: 504fff69a0dfca144b61ec8f9e939f47,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781309624481353553, guid: 504fff69a0dfca144b61ec8f9e939f47,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2781309624481353553, guid: 504fff69a0dfca144b61ec8f9e939f47,
         type: 3}

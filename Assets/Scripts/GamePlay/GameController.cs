@@ -29,7 +29,7 @@ namespace GamePlay {
             if (CrossScenes.SelectedBall != null) {
 
                 Ball.GetComponent<SpriteRenderer>().sprite =  Sprite.Create(
-                    SetupBallTexture(CrossScenes.SelectedBall), new Rect(0, 0, 50, 50), Vector2.one * 0.5f
+                    SetupBallTexture(CrossScenes.SelectedBall), new Rect(0, 0, 160, 160), Vector2.one * 0.5f
                     );
             }
             LaunchBall();
@@ -56,14 +56,14 @@ namespace GamePlay {
         }
         private Texture2D SetupBallTexture(Sprite Image) {
             Texture2D ImageTexture = Image.texture;
-            Texture2D PrefabTexture = new Texture2D(50, 50);
-            int radius = 25;
+            Texture2D PrefabTexture = new Texture2D(160, 160);
+            int radius = 80;
             int rSquared = radius * radius;
 
-            for (int u = 25 - radius; u < 25 + radius + 1; u++) {
-                for (int v = 25 - radius; v < 25 + radius + 1; v++) {
+            for (int u = 80 - radius; u < 80 + radius + 1; u++) {
+                for (int v = 80 - radius; v < 80 + radius + 1; v++) {
                 
-                    if ((25 - u) * (25 - u) + (25 - v) * (25 - v) < rSquared)
+                    if ((80 - u) * (80 - u) + (80 - v) * (80 - v) < rSquared)
                         PrefabTexture.SetPixel(u, v, ImageTexture.GetPixel(u, v));
                     else
                         PrefabTexture.SetPixel(u, v, new Color(0, 0, 0, 0));

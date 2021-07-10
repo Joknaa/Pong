@@ -5,7 +5,7 @@ using UnityEngine.UI;
 namespace GUI {
     public class ResultPanelController : MonoBehaviour {
         private string PlayerName = CrossScenes.PlayerName;
-        private string EnemyName = "2B";
+        private string EnemyName = "Bot";
         public GameObject ResultPanel;
         public GameObject PauseButton;
 

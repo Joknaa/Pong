@@ -1,21 +1,44 @@
-﻿using UnityEngine;
+﻿using System;
+using Unity.Mathematics;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GamePlay {
     public class AIController : MonoBehaviour {
-        private const int EASY_MODE = 10;
-        private const int HARD_MODE = 5;
-        private const int CHALLENGE_MODE = 0;
+        private const float BASE_SPEED = 14;
         public Rigidbody2D AIRigidbody2D;
         public Rigidbody2D BallRigidbody2D;
-        private int Sign;
+        private float Accuracy;
+        private float Speed = BASE_SPEED;
+        private float RoundDuration;
+        private float AIMovement;
 
         private void Start() {
-            Sign = Random.Range(-1, 1) >= 0 ? 1 : -1;
+            Guess();
+        }
+
+        private void Update() {
+            if (Time.time - RoundDuration > 5) {
+                Speed -= Time.deltaTime/10;
+                Debug.Log(Speed);
+            }
         }
 
         private void FixedUpdate() {
-            var AIMovement = BallRigidbody2D.position.y - AIRigidbody2D.position.y;
-            AIRigidbody2D.velocity = new Vector2(AIRigidbody2D.velocity.x, AIMovement * 15 + EASY_MODE);
+            AIMovement = BallRigidbody2D.position.y - AIRigidbody2D.position.y + Accuracy;
+            AIRigidbody2D.velocity = new Vector2(AIRigidbody2D.velocity.x, Speed * AIMovement);
+        }
+        
+        public void Guess() {
+            Accuracy = Random.Range(-2f, 2f);
+            AIMovement = BallRigidbody2D.position.y - AIRigidbody2D.position.y + Accuracy;
+            Debug.Log(Accuracy);
+        }
+
+        public void Reset() {
+            Speed = BASE_SPEED;
+            RoundDuration = Time.time;
+            Guess();
         }
     }
 }

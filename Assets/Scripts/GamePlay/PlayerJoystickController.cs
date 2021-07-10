@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GamePlay {
     public class PlayerJoystickController : MonoBehaviour {
-        private const float Speed = 9;
+        private const float Speed = 14;
         public GameObject Joystick;
         public GameObject Handle;
         public GameObject PlayerSlider;

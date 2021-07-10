@@ -22,12 +22,13 @@ public class PrefabInstentiate : MonoBehaviour {
 
             NewSliderPrefab.GetComponent<Image>().sprite = Sprite.Create(
                 SetupSliderTexture(Images[i]),
-                new Rect(0, 0, 200, 40),
+                new Rect(0, 0, 800, 160),
                 Vector2.one * 0.5f);
             NewBallPrefab.GetComponent<Image>().sprite = Sprite.Create(
                 SetupBallTexture(Images[i]),
-                new Rect(0, 0, 40, 40),
+                new Rect(0, 0, 160, 160),
                 Vector2.one * 0.5f);
+            
 
 
             SliderImages.Add(NewSliderPrefab.GetInstanceID(), Images[i]);
@@ -46,7 +47,7 @@ public class PrefabInstentiate : MonoBehaviour {
 
     private Texture2D SetupSliderTexture(Sprite Image) {
         Texture2D ImageTexture = Image.texture;
-        Texture2D PrefabTexture = new Texture2D(200, 40);
+        Texture2D PrefabTexture = new Texture2D(800, 160);
 
         for (var i = 0; i < PrefabTexture.width; i++)
             for (var j = 0; j < PrefabTexture.height; j++)
@@ -57,13 +58,13 @@ public class PrefabInstentiate : MonoBehaviour {
     }
     private Texture2D SetupBallTexture(Sprite Image) {
         Texture2D ImageTexture = Image.texture;
-        Texture2D PrefabTexture = new Texture2D(40, 40);
-        int radius = 20;
+        Texture2D PrefabTexture = new Texture2D(160, 160);
+        int radius = 80;
         int rSquared = radius * radius;
 
-        for (int u = 20 - radius; u < 20 + radius + 1; u++) {
-            for (int v = 20 - radius; v < 20 + radius + 1; v++) {
-                if ((20 - u) * (20 - u) + (20 - v) * (20 - v) < rSquared)
+        for (int u = 80 - radius; u < 80 + radius + 1; u++) {
+            for (int v = 80 - radius; v < 80 + radius + 1; v++) {
+                if ((80 - u) * (80 - u) + (80 - v) * (80 - v) < rSquared)
                     PrefabTexture.SetPixel(u, v, ImageTexture.GetPixel(u, v));
                 else
                     PrefabTexture.SetPixel(u, v, new Color(0, 0, 0, 0));

@@ -21,6 +21,6 @@ public class CustomisationController : MonoBehaviour {
     public void GetPlayerName() {
         string PlayerName = Text.text;
         Debug.Log(PlayerName);
-        CrossScenes.PlayerName = PlayerName;
+        //CrossScenes.PlayerName = PlayerName;
     }
 }

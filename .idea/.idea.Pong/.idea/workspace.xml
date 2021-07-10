@@ -33,7 +33,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/UltimateMenus/Scripts/ButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/ScoreController.cs" />
@@ -48,18 +47,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState/PauseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CustomisationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CrossScenes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/prefabInstentiate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/MainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabInstentiate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomisationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/JoystickController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PauseMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerJoystickController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BallController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerJoystickController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabInstentiate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomisationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CrossScenes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ResultPanelController.cs" />
       </list>
     </option>
   </component>
