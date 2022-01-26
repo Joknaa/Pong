@@ -17,6 +17,7 @@ namespace GamePlay {
 
         private void Update() {
             Speed += Time.deltaTime;
+            BallRigidBody2D.velocity = Speed * BallRigidBody2D.velocity.normalized;
         }
 
         private void OnTriggerEnter2D(Collider2D other) {
@@ -31,7 +32,7 @@ namespace GamePlay {
 
         private void OnCollisionEnter2D(Collision2D other) {
             if (other.gameObject.CompareTag("EnemyAI")) {
-                BallRigidBody2D.velocity = Speed * BallRigidBody2D.velocity.normalized;
+                //BallRigidBody2D.velocity = Speed * BallRigidBody2D.velocity.normalized;
                 AIControllerScript.Guess();
             } else if (other.gameObject.CompareTag("Slider")) {
                 BallRigidBody2D.velocity = Speed * BallRigidBody2D.velocity.normalized;
